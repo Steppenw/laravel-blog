@@ -1,0 +1,5 @@
+210807
+1)composer create-project --prefer-dist laravel/laravel:^7.0 ProjectName
+2)npm install (adds 'node_modules')
+3)composer require laravel/ui:^2.4
+4)php artisan ui bootstrap --auth
