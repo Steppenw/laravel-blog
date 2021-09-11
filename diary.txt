@@ -1,5 +1,14 @@
 #Day 210807
 
+Install 'Composer':
+sudo apt update
+sudo apt install curl
+sudo ln -s /opt/lampp/bin/php /usr/local/bin/php
+sudo curl -s https://getcomposer.org/installer | /opt/lampp/bin/php
+sudo mv composer.phar /usr/local/bin/composer
+composer -V
+sudo nano -lw /opt/lampp/etc/php.ini: 'track_errors=Off'
+
 1)composer create-project --prefer-dist laravel/laravel:^7.0 ProjectName (laravel-blog)
 2)npm install (adds 'node_modules')
 
@@ -16,3 +25,16 @@ Per importare un progetto scaricato da GitHub:
 3)duplicare '.env.example' e rinominarlo '.env'
 4)php artisan key:generate
 
+#Day 210911
+
+Area privata:
+1)php artisan make:controller Admin/HomeController
+2)Route::prefix('admin')
+    ->namespace('Admin')
+    ->middleware('auth')
+    ->group(function () {
+        Route::get('/', 'HomeController@index')->name('home');
+    });
+
+'npm run dev' per css
+'php artisan cache:clear'
