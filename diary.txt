@@ -38,3 +38,15 @@ Area privata:
 
 'npm run dev' per css
 'php artisan cache:clear'
+
+#Day 210912
+
+1)Creazione DB 'laravel_blog'
+2)In '.env':
+    DB_DATABASE=laravel_blog
+    DB_USERNAME=root
+    DB_PASSWORD=(empty)
+3)php artisan migrate
+
+In 'Providers/RouteServiceProvider.php':
+public const HOME = '/admin';
