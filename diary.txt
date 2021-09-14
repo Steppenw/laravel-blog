@@ -50,3 +50,11 @@ Area privata:
 
 In 'Providers/RouteServiceProvider.php':
 public const HOME = '/admin';
+
+#Day 210914
+
+I post:
+1)php artisan make:model Post
+2)php artisan make:migration create_posts_table (creazione tabella 'posts')
+3)php artisan make:controller --resource Admin/PostController (area privata)
+4)php artisan make:controller PostController (area pubblica)
