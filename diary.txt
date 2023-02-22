@@ -10,7 +10,7 @@ composer -V
 sudo nano -lw /opt/lampp/etc/php.ini: 'track_errors=Off'
 
 1)composer create-project --prefer-dist laravel/laravel:^7.0 ProjectName (laravel-blog)
-2)npm install (adds 'node_modules')
+2)npm install (adds 'node_modules'), per utilizzare 'Sass'
 
 Authentication:
 3)composer require laravel/ui:^2.4
